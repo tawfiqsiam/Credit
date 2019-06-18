@@ -27,7 +27,7 @@ client.on('ready', () => {
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  client.user.setGame(`${prefix}help-br`)
+  client.user.setGame(`${prefix}help`)
 });
 
  
@@ -36,7 +36,7 @@ client.on('message', message => {
     let command = messageArray[0];
     
     
-    if (command === `${prefix}help-br`) {
+    if (command === `${prefix}help`) {
 			let embed = new Discord.RichEmbed()
                 .setColor('RANDOM')
                 .addField('     **=-=-:: [ Bc Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
