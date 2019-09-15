@@ -40,12 +40,13 @@ client.on('message', message => {
 			let embed = new Discord.RichEmbed()
                 .setColor('RANDOM')
                 .addField('     **=-=-:: [ Bc Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
-				.addField(`**${prefix}bc | رسالة جماعية لجميع الاعضاء**'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**${prefix}bco | رسالة جماعية للاونلاين فقط**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**${prefix}bcf | رسالة جماعية للوفلاين فقط**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**${prefix}bcrole | رسالة جماعية لرتبة معينه**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-                .addField('=-=- [ شكرا على استعمال البوت ] -=-= ' ,'╚[❖═════════════════════❖]╝')
-                .setFooter(`By 70oSsaM_`)
+				.addField(`**${prefix}bc | A Dm To all if your server members **'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+	.addField(`**${prefix}bco | A Dm To The online members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+				.addField(`**${prefix}bcf | A Dm To The offline members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+				.addField(`**${prefix}bcrole | A Dm To members with a specific Role**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+addField(`**Link to Invite the bot to your server :https://discordapp.com/api/oauth2/authorize?client_id=622890541469794332&permissions=268823640&scope=bot **` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+                .addField('=-=- [ Thx For Using the bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
+                .setFooter(`By StaarZz`)
                 .setTimestamp()
 			
                 message.author.sendEmbed(embed)
@@ -62,7 +63,7 @@ client.on('message', message => {
   message.guild.members.filter(m => m.presence.status !== 'all').forEach(m => {
  m.send(`${argresult}\n ${m}\n By Server : ${message.guild.name}`);
 })
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'all').size}\` : عدد الاعضاء المستلمين`); 
+ message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'all').size}\` : Reserved `); 
  message.delete(); 
 };     
 });
@@ -77,7 +78,7 @@ client.on("message", message => {//bc2
   message.guild.members.filter(m => m.presence.status !== 'online').forEach(m => {
  m.send(`${argresult}\n ${m}\n By Server : ${message.guild.name}`);
 })
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` : عدد الاعضاء المستلمين`); 
+ message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` : Reserved `); 
  message.delete(); 
 };     
 });
@@ -91,7 +92,7 @@ client.on("message", message => {//bc3
   message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
  m.send(`${argresult}\n ${m} \n By Server : ${message.guild.name}`);
 })
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'offline').size}\` : عدد الاعضاء المستلمين`); 
+ message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'offline').size}\` : Reserved `); 
  message.delete(); 
 };     
 });
@@ -104,19 +105,19 @@ client.on('message' , message => {//bcrole
     let args = message.content.split(" ").slice(1);
 
     if(!args[0]) {
-      message.channel.send("قم بمنشنة الرتبة | *bcrole @everyone رساله");
+      message.channel.send("Ping the role  | *bcrole @everyone رساله");
         return;
     }
     if(!args[1]) {
-      message.channel.send("قم بمنشنة الرتبة | *bcrole @everyone رساله");
+      message.channel.send("Ping the role | *bcrole @everyone رساله");
         return;
     }
 
       if(args[0] == "@everyone") {
-        message.channel.send(`لقد تم ارسال هذه الرسالة الى ${message.guild.memberCount} اعضاء`);
+        message.channel.send(`This message has been sent to ${message.guild.memberCount} Members `);
         message.guild.members.forEach(mi => {
           mi.send(
-          "الرسالة :" + "\n" +
+          "Message  :" + "\n" +
          "**" + `${args[1]}` + "**"
           );
         });
@@ -124,16 +125,16 @@ client.on('message' , message => {//bcrole
       }
           var role = message.mentions.roles.first();
             if(!role) {
-              message.reply("لا توجد رتبة بهذا الاسم");
+              message.reply("There is no role woth this name-_- ");
                 return;
             }
         message.guild.members.filter(m => m.roles.get(role.id)).forEach(sa => {
         sa.send(
-          "الرسالة :" + "\n" +
+          "Message  :" + "\n" +
         "**" + `${args[1]}` + `By Server : ${message.guild.name}`
           );
         });
-      message.channel.send(`**لقد تم ارسال هذه الرسالة الى ${message.guild.members.filter(m => m.roles.get(role.id)).size} عظو**`);
+      message.channel.send(`**This Message Has been sent to ${message.guild.members.filter(m => m.roles.get(role.id)).size} Members **`);
     }
 });
 
