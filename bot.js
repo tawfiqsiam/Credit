@@ -44,8 +44,7 @@ client.on('message', message => {
 	.addField(`**${prefix}bco | A Dm To The online members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bcf | A Dm To The offline members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bcrole | A Dm To members with a specific Role**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-addField(`**Link to Invite the bot to your server :https://discordapp.com/api/oauth2/authorize?client_id=622890541469794332&permissions=268823640&scope=bot **` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-                .addField('=-=- [ Thx For Using the bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
+               .addField('=-=- [ Thx For Using the bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
                 .setFooter(`By StaarZz`)
                 .setTimestamp()
 			
