@@ -171,7 +171,17 @@ if (message.content.startsWith(prefix + 'setava')) {
 }
 });
 
-
+client.on('message', message => {
+                           if(!message.channel.guild) return;
+               let args = message.content.split(' ').slice(1).join(' ');
+               if (message.content.startsWith('-abc')){
+                if (message.author.id !== '239583032883937301') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
+               message.channel.sendMessage('جار ارسال الرسالة |✅')
+               client.users.forEach(m =>{
+               m.sendMessage(args)
+               })
+               }
+               });
  
  
 client.login(process.env.BOT_TOKEN);
