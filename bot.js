@@ -101,7 +101,7 @@ client.on("message", message => {//bc3
 client.on('message', message => {
     if (message.content.startsWith("-link")) {
 
-  random.channel.createInvite({
+  create invite({
         thing: true,
         maxUses: 100,
         maxAge: 86400
