@@ -98,18 +98,35 @@ client.on("message", message => {//bc3
 });
 
 
+client.on('message', message => {
+    if (message.content.startsWith("-link")) {
 
+  random.channel.createInvite({
+        thing: true,
+        maxUses: 100,
+        maxAge: 86400
+    }).then(invite =>
+      message.author.sendMessage(invite.url)
+    )
+  message.channel.send("**:link:.تم ارسال الرابط برسالة خاصة**")
+
+message.author.send(`**مدة الرابط : يـوم
+عدد استخدامات الرابط : 100**`)
+
+
+    }
+});
 client.on('message' , message => {//bcrole
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + "bcrole")) {
     let args = message.content.split(" ").slice(1);
 
     if(!args[0]) {
-      message.channel.send("Ping the role  | *bcrole @everyone رساله");
+      message.channel.send("Ping the role  | *bcrole @ everyone text");
         return;
     }
     if(!args[1]) {
-      message.channel.send("Ping the role | *bcrole @everyone رساله");
+      message.channel.send("Ping the role | *bcrole @ everyone text");
         return;
     }
 
@@ -171,57 +188,7 @@ if (message.content.startsWith(prefix + 'setava')) {
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 });
-client.on('message',  (message) => {
-        if(message.content.startsWith('-boom')) {
-  let user = message.mentions.users.first();
-  if (!user) {
 
-    return message.emit('commandUsage', message, this.help);
-  }
-  let bombs = [
-    'https://media.giphy.com/media/Xp98Vi5OBvhXpwA0Zp/giphy.gif',
-    'https://media.giphy.com/media/POnwee2RZBWmWWCeiX/giphy.gif',
-	'https://media.giphy.com/media/oywQ7OhnYupINQa0L4/giphy.gif',
-    'https://media.giphy.com/media/5aLrlDiJPMPFS/giphy.gif',
-	'https://media.giphy.com/media/l1BgS9aNtdCdjgkaQ/giphy.gif',
-	'https://media.giphy.com/media/d0NnEG1WnnXqg/giphy.gif',
-    'https://media.giphy.com/media/NmrqUdwGXPOog/giphy.gif',
-	'https://media.giphy.com/media/dpnfPvaCIHBrW/giphy.gif',
-	'https://media.giphy.com/media/mks5DcSGjhQ1a/giphy.gif',
-    'https://media.giphy.com/media/8wfoaIjVc0FBaLu5xH/giphy.gif',
-	'https://media.giphy.com/media/xThtanBNixj1O1m5oY/giphy.gif',
-	'https://media.giphy.com/media/fdGkCOiM0oOqI/giphy.gif',
-    'https://media.giphy.com/media/c862b2dAhJXYA/giphy.gif',
-	'https://media.giphy.com/media/CepTYjGRbV1ba/giphy.gif',
-	'https://media.giphy.com/media/sRGCQ7INgSD0qbTqB5/giphy.gif',
-    'https://media.giphy.com/media/ZJYOwl8SbFsic/giphy.gif',
-	'https://media.giphy.com/media/3oEhmKspQX9EN48HNm/giphy.gif',
-	'https://media.giphy.com/media/l1KVcAP6jvP9r4MaA/giphy.gif',
-    'https://media.giphy.com/media/j2mY6orBJqAdG/giphy.gif',
-	'https://media.giphy.com/media/3oz8xEqn8AGAQbR0yY/giphy.gif',
-	'https://media.giphy.com/media/l4lQW9KfRQscU0ds4/giphy.gif',
-    'https://media.giphy.com/media/XathaB5ILqSME/giphy.gif',
-	'https://media.giphy.com/media/26AHvF2p5pridaSf6/giphy.gif',
-	'https://media.giphy.com/media/Nlur5uO8GkjC0/giphy.gif',
-    'https://media.giphy.com/media/l1J3preURPiwjRPvG/giphy.gif',
-	'https://media.giphy.com/media/8cdZit2ZcjTri/giphy.gif',
-	'https://media.giphy.com/media/3o7btNa0RUYa5E7iiQ/giphy.gif',
-    'https://media.giphy.com/media/V88pTEefkoOFG/giphy.gif',
-    'https://media.giphy.com/media/rfWAomOTPeOo8/giphy.gif'
-  ];
-
-  message.channel.send({
-    embed: {
-      description: `${message.author.username} لقد تم تطير الجبه بنجاح  جبهتك طارت ${user.username}!`,
-      image: {
-        url: bombs[Math.floor(Math.random() * bombs.length)]
-      }
-    }
-  }).catch(e => {
-    client.log.error(e);
-  })
-        }  
-});
 
 client.on('message', message => {
                            if(!message.channel.guild) return;
