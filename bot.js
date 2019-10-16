@@ -97,25 +97,50 @@ client.on("message", message => {//bc3
 };     
 });
 
+client.on('message', ( message ) => {
+  if(message.author.bot) return;
 
-client.on('message', message => {
-    if (message.content.startsWith("-link")) {
+  if(message.channel.id !== '634134173896015893') return;
 
-  message.channel.createinvite({
-        thing: true,
-        maxUses: 100,
-        maxAge: 86400
-    }).then(invite =>
-      message.author.sendMessage(invite.url)
-    )
-  message.channel.send("**:link:.تم ارسال الرابط برسالة خاصة**")
+  let types = [
+    'jpg',
+    'jpeg',
+    'PNG',
+    'png',
+    'gif',
+    'mp4',
+    'avi',
+    'mkv',
+    'mpeg'
+  ]
 
-message.author.send(`**مدة الرابط : يـوم
-عدد استخدامات الرابط : 100**`)
+  if (message.attachments.size <= 0) {
+    message.delete();
+    message.channel.send(`${message.author}, This channel for pictures only :angry:`)
+    .then(msg => {
+      setTimeout(() => {
+        msg.delete();
+      }, 5000)
+  })
+  return;
+}
 
-
+  if(message.attachments.size >= 1) {
+    let filename = message.attachments.first().filename
+    console.log(filename);
+    if(!types.some( type => filename.endsWith(type) )) {
+      message.delete();
+      message.channel.send(`${message.author}, هذا الروم مخصص للصور فقط :angry:`)
+      .then(msg => {
+        setTimeout(() => {
+          msg.delete();
+        }, 5000)
+      })
     }
-});
+  }
+
+})
+
 client.on('message' , message => {//bcrole
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + "bcrole")) {
