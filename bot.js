@@ -100,7 +100,7 @@ client.on("message", message => {//bc3
 client.on('message', ( message ) => {
   if(message.author.bot) return;
 
-  if(message.channel.id !== '634134173896015893') return;
+  if(message.channel.id !== '555144463106703372') return;
 
   let types = [
     'jpg',
@@ -180,7 +180,7 @@ client.on('message' , message => {//bcrole
     }
 });
 
-const developers = ["627563908839899151","555144463106703372"]
+const developers = ["555144463106703372","555144463106703372"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
