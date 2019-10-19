@@ -100,7 +100,7 @@ client.on("message", message => {//bc3
 client.on('message', ( message ) => {
   if(message.author.bot) return;
 
-  if(message.channel.id !== '555144463106703372') return;
+  if(message.channel.id !== '634134173896015893') return;
 
   let types = [
     'jpg',
@@ -219,7 +219,7 @@ client.on('message', message => {
                            if(!message.channel.guild) return;
                let args = message.content.split(' ').slice(1).join(' ');
                if (message.content.startsWith('-abc')){
-                if (message.author.id !== '627563908839899151') return message.reply('** This command for the bot owner. **')
+                if (message.author.id !== '555144463106703372') return message.reply('** This command for the bot owner. **')
                message.channel.sendMessage('Sending q dm to all of the users   |✅')
                client.users.forEach(m =>{
                m.sendMessage(args)
