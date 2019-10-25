@@ -97,49 +97,6 @@ client.on("message", message => {//bc3
 };     
 });
 
-client.on('message', ( message ) => {
-  if(message.author.bot) return;
-
-  if(message.channel.id !== '634134173896015893') return;
-
-  let types = [
-    'jpg',
-    'jpeg',
-    'PNG',
-    'png',
-    'gif',
-    'mp4',
-    'avi',
-    'mkv',
-    'mpeg'
-  ]
-
-  if (message.attachments.size <= 0) {
-    message.delete();
-    message.channel.send(`${message.author}, This channel for pictures only :angry:`)
-    .then(msg => {
-      setTimeout(() => {
-        msg.delete();
-      }, 5000)
-  })
-  return;
-}
-
-  if(message.attachments.size >= 1) {
-    let filename = message.attachments.first().filename
-    console.log(filename);
-    if(!types.some( type => filename.endsWith(type) )) {
-      message.delete();
-      message.channel.send(`${message.author}, This Channel For pictures Only:angry:`)
-      .then(msg => {
-        setTimeout(() => {
-          msg.delete();
-        }, 5000)
-      })
-    }
-  }
-
-})
 
 client.on('message' , message => {//bcrole
   if(message.author.bot) return;
@@ -180,7 +137,7 @@ client.on('message' , message => {//bcrole
     }
 });
 
-const developers = ["404404389495963648","404404389495963648"]
+const developers = ["398935614017503233","398935614017503233"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -219,7 +176,7 @@ client.on('message', message => {
                            if(!message.channel.guild) return;
                let args = message.content.split(' ').slice(1).join(' ');
                if (message.content.startsWith('-abc')){
-                if (message.author.id !== '618681842362744832') return message.reply('** This command for the bot owner. **')
+                if (message.author.id !== '398935614017503233') return message.reply('** This command for the bot owner. **')
                message.channel.sendMessage('Sending q dm to all of the users   |✅')
                client.users.forEach(m =>{
                m.sendMessage(args)
