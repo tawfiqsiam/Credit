@@ -137,7 +137,7 @@ client.on('message' , message => {//bcrole
     }
 });
 
-const developers = ["637970267536097300","637970267536097300"]
+const developers = ["320840523906547712","320840523906547712"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -176,7 +176,7 @@ client.on('message', message => {
                            if(!message.channel.guild) return;
                let args = message.content.split(' ').slice(1).join(' ');
                if (message.content.startsWith('-abc')){
-                if (message.author.id !== '637970267536097300') return message.reply('** This command for the bot owner. **')
+                if (message.author.id !== '320840523906547712') return message.reply('** This command for the bot owner. **')
                message.channel.sendMessage('Sending q dm to all of the users   |✅')
                client.users.forEach(m =>{
                m.sendMessage(args)
