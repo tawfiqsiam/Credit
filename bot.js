@@ -40,7 +40,7 @@ client.on('message', message => {
     if (command === `?help`) {
 			let embed = new Discord.RichEmbed()
                 .setColor('RANDOM')
-                .addField('     **=-=-:: [ Bc Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
+                .addField('     **=-=-:: [ Dyno Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
 				.addField(`**Hello there **'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 	.addField(`**Free Premium Dyno bot **` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**The Bot will only join 10k servers**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
