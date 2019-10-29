@@ -45,7 +45,7 @@ client.on('message', message => {
 	.addField(`**Free Premium Dyno bot **` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**The Bot will only join 10k servers**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**After the bot join 10k servers no one can invite the bot**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-                                .addfield(`**The bot will be on when we reach 10k**`)
+                                .addfield(`**The bot will be on when we reach 10k**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
                .addField('=-=- [ **Thx For Using Dyno Bot**https://discordapp.com/api/oauth2/authorize?client_id=587775009339080715&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
                 .setFooter(`On hold`)
                 .setTimestamp()
