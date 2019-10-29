@@ -37,7 +37,7 @@ client.on('message', message => {
     let command = messageArray[0];
     
     
-    if (command === `${prefix}help`) {
+    if (command === `?help`) {
 			let embed = new Discord.RichEmbed()
                 .setColor('RANDOM')
                 .addField('     **=-=-:: [ Bc Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
