@@ -1,6 +1,6 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "$"
+const prefix = "?"
 
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 console.log('         [Wait please .. ]       ')
@@ -28,7 +28,7 @@ client.on('ready', () => {
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  client.user.setGame(`${prefix}help`)
+  client.user.setGame(`${prefix}help | 4.3k Servers`)
 });
 
  
@@ -41,12 +41,13 @@ client.on('message', message => {
 			let embed = new Discord.RichEmbed()
                 .setColor('RANDOM')
                 .addField('     **=-=-:: [ Bc Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
-				.addField(`**${prefix}bc | A Dm To all if your server members **'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-	.addField(`**${prefix}bco | A Dm To The online members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**${prefix}bcf | A Dm To The offline members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**${prefix}bcrole | A Dm To members with a specific Role**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-               .addField('=-=- [ Thx For Using the bot https://discordapp.com/api/oauth2/authorize?client_id=592385794686320660&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
-                .setFooter(`By StaarZz`)
+				.addField(`**Hello there **'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+	.addField(`**Free Premium Dyno bot **` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+				.addField(`**The Bot will only join 10k servers**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+				.addField(`**After the bot join 10k servers no one can invite the bot**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+                                .addfield(`**The bot will be on when we reach 10k**`)
+               .addField('=-=- [ **Thx For Using Dyno Bot**https://discordapp.com/api/oauth2/authorize?client_id=592386832247816223&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
+                .setFooter(`On hold`)
                 .setTimestamp()
 			
                 message.author.sendEmbed(embed)
@@ -137,7 +138,7 @@ client.on('message' , message => {//bcrole
     }
 });
 
-const developers = ["320840523906547712","320840523906547712"]
+const developers = ["618681842362744832","618681842362744832"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
