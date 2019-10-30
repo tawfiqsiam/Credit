@@ -59,7 +59,7 @@ client.on('message', message => {
 });
 
 client.on('message',async message => {
-  if(message.content === (?unbanall)) {
+  if(message.content === (prefix + 'unbanall')) {
     var user = message.mentions.users.first();
     if(!message.member.hasPermission('ADMINISTRATOR')) return;
     if(!message.guild.member(client.user).hasPermission("BAN_MEMBERS")) return message.reply("**I Don't Have ` BAN_MEMBERS ` Permission**");
