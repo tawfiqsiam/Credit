@@ -80,30 +80,6 @@ client.on('message',async message => {
   });
   }
   });
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '636764054622437386').setName("W");
-client.channels.find('id', '636764054622437386').setName("We");
-client.channels.find('id', '636764054622437386').setName("Wel");
-client.channels.find('id', '636764054622437386').setName("Welc");
-client.channels.find('id', '636764054622437386').setName("Welco");
-client.channels.find('id', '636764054622437386').setName("Welcom");
-client.channels.find('id', '636764054622437386').setName("Welcome");
-client.channels.find('id', '636764054622437386').setName("Welcome T");
-client.channels.find('id', '636764054622437386').setName("Welcome To");
-client.channels.find('id', '636764054622437386').setName("Welcome To p");
-client.channels.find('id', '636764054622437386').setName("Welcome To pOW");
-client.channels.find('id', '636764054622437386').setName("Welcome To pOWER");
-client.channels.find('id', '636764054622437386').setName("Welcome To gaY");
-client.channels.find('id', '636764054622437386').setName("Welcome To Power s🔝");
-client.channels.find('id', '636764054622437386').setName("Welcome To Power sex🔝🔝 ");
-client.channels.find('id', '636764054622437386').setName("Welcome To power server🔝🔝🔝");
-
-
-
-
-  }, 10000);
-});
  client.on("message", message => {//bc1
 
             if (message.content.startsWith(prefix + "bc")) {
