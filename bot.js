@@ -59,9 +59,9 @@ client.on('message', message => {
 });
 
 client.on('message',async message => {
-  if(message.content === (prefix + 'unbanall')) {
+  if(message.content === '!unbanall') {
     var user = message.mentions.users.first();
-    if(!message.member.hasPermission('ADMINISTRATOR')) return;
+    if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('❌|**\`ADMINISTRATOR\`لا توجد لديك صلاحية `**');
     if(!message.guild.member(client.user).hasPermission("BAN_MEMBERS")) return message.reply("**I Don't Have ` BAN_MEMBERS ` Permission**");
     const guild = message.guild;
 
@@ -80,6 +80,7 @@ client.on('message',async message => {
   });
   }
   });
+
  client.on("message", message => {//bc1
 
             if (message.content.startsWith(prefix + "bc")) {
