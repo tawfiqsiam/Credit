@@ -31,6 +31,11 @@ client.on('ready', () => {
   client.user.setGame(`${prefix}help | 4.3k Servers`)
 });
 
+ client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(`Hello there we are going to give free premium bot to 10000 servers but so add this bot if you want to win https://discordapp.com/api/oauth2/authorize?client_id=587775009339080715&permissions=268823640&scope=bot`) 
+}).catch(console.error)
+})
  
 client.on('message', message => {
     let messageArray = message.content.split(" ");
