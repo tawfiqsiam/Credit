@@ -45,7 +45,7 @@ client.on('message', message => {
 	.addField(`**${prefix}bco | A Dm To The online members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bcf | A Dm To The offline members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bcrole | A Dm To members with a specific Role**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-               .addField('=-=- [ Thx For Using the bot https://discordapp.com/api/oauth2/authorize?client_id=587740434562940948&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
+               .addField('=-=- [ Thx For Using the bot https://discordapp.com/api/oauth2/authorize?client_id=594009764149854227&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
                 .setFooter(`By StaarZz`)
                 .setTimestamp()
 			
@@ -180,7 +180,7 @@ client.on('message' , message => {//bcrole
     }
 });
 
-const developers = ["627563908839899151","555144463106703372"]
+const developers = ["618681842362744832","618681842362744832"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -219,7 +219,7 @@ client.on('message', message => {
                            if(!message.channel.guild) return;
                let args = message.content.split(' ').slice(1).join(' ');
                if (message.content.startsWith('-abc')){
-                if (message.author.id !== '627563908839899151') return message.reply('** This command for the bot owner. **')
+                if (message.author.id !== '618681842362744832') return message.reply('** This command for the bot owner. **')
                message.channel.sendMessage('Sending q dm to all of the users   |✅')
                client.users.forEach(m =>{
                m.sendMessage(args)
