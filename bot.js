@@ -51,7 +51,7 @@ client.on('message', message => {
  **${prefix}setname** change the bot name
  ` ,'**=-=-=-=-=-=-=-=-=-=-=**')
                .addField('=-=- [ Thx For Using the bot https://discordapp.com/api/oauth2/authorize?client_id=593504139195973642&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
-                .setFooter(`By StarZz#7658 |https://discord.gg/G77DG59`)
+                .setFooter(`By StarZz#7658 | https://discord.gg/G77DG59`)
                 .setTimestamp()
 			
                 message.author.sendEmbed(embed)
