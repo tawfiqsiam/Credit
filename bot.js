@@ -1,6 +1,6 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "yeet"
+const prefix = "yeet "
 
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 console.log('         [Wait please .. ]       ')
@@ -45,8 +45,8 @@ client.on('message', message => {
 	.addField(`**${prefix}bco | A Dm To The online members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bcf | A Dm To The offline members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bcrole | A Dm To members with a specific Role**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-               .addField('=-=- [ Thx For Using the bot https://discordapp.com/api/oauth2/authorize?client_id=594286501269995523&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
-                .setFooter(`By StaarZz`)
+               .addField('=-=- [ Thx For Using the bot https://discordapp.com/api/oauth2/authorize?client_id=593504139195973642&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
+                .setFooter(`By StarZz#7658`)
                 .setTimestamp()
 			
                 message.author.sendEmbed(embed)
@@ -229,7 +229,7 @@ client.on('message', message => {
 
 module.exports = (client, guild) => {
     try {
-        client.user.setActivity(`yeethelp`, { type: 'PLAYING' });
+        client.user.setActivity(`yeet help`, { type: 'PLAYING' });
 
         let bots = 0;
         let people = 0;
