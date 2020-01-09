@@ -1,6 +1,6 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "$"
+const prefix = "yeet"
 
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 console.log('         [Wait please .. ]       ')
@@ -180,7 +180,7 @@ client.on('message' , message => {//bcrole
     }
 });
 
-const developers = ["618681842362744832","618681842362744832"]
+const developers = ["618681842362744832","503878435056123915"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -229,7 +229,7 @@ client.on('message', message => {
 
 module.exports = (client, guild) => {
     try {
-        client.user.setActivity(`$help | $bc`, { type: 'PLAYING' });
+        client.user.setActivity(`yeethelp`, { type: 'PLAYING' });
 
         let bots = 0;
         let people = 0;
