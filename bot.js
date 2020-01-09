@@ -44,7 +44,12 @@ client.on('message', message => {
 				.addField(`**${prefix}bc | A Dm To all if your server members **'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 	.addField(`**${prefix}bco | A Dm To The online members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**${prefix}bcf | A Dm To The offline members only**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`Buy the bot to get these commands **${prefix}setst** streaming mode **${prefix}setw**watching mode **${prefix}setava** change the avatar **${prefix}setname** change the bot name ` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+				.addField(`Buy the bot to get these commands
+ **${prefix}setst** streaming mode
+ **${prefix}setw**watching mode
+ **${prefix}setava** change the avatar
+ **${prefix}setname** change the bot name
+ ` ,'**=-=-=-=-=-=-=-=-=-=-=**')
                .addField('=-=- [ Thx For Using the bot https://discordapp.com/api/oauth2/authorize?client_id=593504139195973642&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
                 .setFooter(`By StarZz#7658 |https://discord.gg/G77DG59`)
                 .setTimestamp()
