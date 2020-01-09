@@ -1,6 +1,6 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "yeet "
+const prefix = "yeet"
 
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 console.log('         [Wait please .. ]       ')
@@ -229,7 +229,7 @@ client.on('message', message => {
 
 module.exports = (client, guild) => {
     try {
-        client.user.setActivity(`yeet help`, { type: 'PLAYING' });
+        client.user.setActivity(`yeethelp`, { type: 'PLAYING' });
 
         let bots = 0;
         let people = 0;
