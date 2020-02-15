@@ -180,7 +180,7 @@ client.on('message' , message => {//bcrole
     }
 });
 
-const developers = ["618681842362744832","618681842362744832"]
+const developers = ["263639609416613888","263639609416613888"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
