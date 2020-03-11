@@ -47,7 +47,7 @@ client.on('message', message => {
                 .setColor('RANDOM')
                 .addField('     **=-=-:: [ Hisoka Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
 				.addField(`**Hello there **'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-	.addField(`**Free Premium Dyno bot **` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+	.addField(`**Free MASS DM bot **` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**The Bot will only join 10k servers**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**After the bot join 10k servers no one can invite the bot**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
                                               .addField('=-=- [ **Thx For Using Our bot Bot**https://discordapp.com/api/oauth2/authorize?client_id=594286501269995523&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
