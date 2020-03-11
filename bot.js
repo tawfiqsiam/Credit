@@ -45,12 +45,12 @@ client.on('message', message => {
     if (command === `?help`) {
 			let embed = new Discord.RichEmbed()
                 .setColor('RANDOM')
-                .addField('     **=-=-:: [ Dyno Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
+                .addField('     **=-=-:: [ Hisoka Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
 				.addField(`**Hello there **'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 	.addField(`**Free Premium Dyno bot **` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**The Bot will only join 10k servers**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**After the bot join 10k servers no one can invite the bot**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-                                              .addField('=-=- [ **Thx For Using Dyno Bot**https://discordapp.com/api/oauth2/authorize?client_id=587775009339080715&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
+                                              .addField('=-=- [ **Thx For Using Our bot Bot**https://discordapp.com/api/oauth2/authorize?client_id=594286501269995523&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
                 .setFooter(`On hold`)
                 .setTimestamp()
 			
