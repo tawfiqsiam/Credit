@@ -205,19 +205,17 @@ var star = [
 "😉",
 "😧",
 "😡",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
+"😑",
+"💩",
+"👽",
+"💙",
+"❤",
+"💋",
+"💔",
 ];
 
 client.on('message', message => {
+if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   if (message.author.bot == false) {
     message.react(`${star[Math.floor(Math.random() * star.length)]}`);
   }
