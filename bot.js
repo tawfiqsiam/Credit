@@ -110,6 +110,8 @@ client.on('message', message => {
         .setAuthor('Avatar Link :')
         .setTitle('`${omar.lastMessage}`')
     message.channel.sendEmbed(embed);
+}
+message.channel.send(`${omar.lastMessage}`)
 };
     });
 
