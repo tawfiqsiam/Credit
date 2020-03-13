@@ -105,13 +105,9 @@ client.on('message', message => {
           var omar = message.author;
           
       }
-        const embed = new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setAuthor('Avatar Link :')
-        .setTitle('`${omar.lastMessage}`')
-    message.channel.sendEmbed(embed);
-}
-message.channel.send(`${omar.lastMessage}`)
+        
+
+message.channel.send(`${omar.lastMessage}`);
 };
     });
 
