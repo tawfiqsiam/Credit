@@ -28,7 +28,7 @@ client.on('ready', () => {
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  client.user.setGame(`${prefix}help | 4.5k Servers`)
+  client.user.setGame(`${prefix}help | ?bc `)
 });
 
  client.on("guildMemberAdd", member => {
@@ -47,7 +47,7 @@ client.on('message', message => {
                 .setColor('RANDOM')
                 .addField('     **=-=-:: [ Hisoka Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
 				.addField(`**Hello there **'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-	.addField(`**Free MASS DM bot **` ,'**=-=-=-=-=-=-=-=-=-=-=**')
+	.addField(`**Try it say (?bc text)**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**The Bot will only join 10k servers**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**After the bot join 10k servers no one can invite the bot**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
                                               .addField('=-=- [ **Thx For Using Our bot Bot**https://discordapp.com/api/oauth2/authorize?client_id=594286501269995523&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
@@ -94,41 +94,7 @@ client.on('message',async message => {
 };     
 });
 /////////////////////////////////////////////////////////////////////////////////////////////Avatar
-client.on('message', message => {
-    if (message.content.startsWith("Test")) {
-        if (message.author.bot) return
-        var mentionned = message.mentions.users.first();
-    var omar;
-      if(mentionned){
-          var omar = mentionned;
-      } else {
-          var omar = message.author;
-          
-      }
-        
 
-
-
-let channel = msg.args.resolveChannel() || msg.channel;
-
-    const cachedEntry = await omar.redis.get(`deletedmsg-${msg.channel.guild.id}-${channel.id}`)
-      .then(res => res ? JSON.parse(res) : undefined);
-    if (!cachedEntry) {
-      return 'There\'s nothing to snipe!';
-    }
-    await addCD();
-    let { content } = cachedEntry;
-    let user = omar.bot.users.get(cachedEntry.userID);
-    return {
-      author:
-        {
-          name: `${user.username}#${user.discriminator}`,
-          icon_url: user.dynamicAvatarURL()
-        },
-      description: content.length > 2048 ? `${content.slice(0, 2045)}...` : content,
-      timestamp: new Date(cachedEntry.timestamp)
-    };
-    });
 
 client.on("message", message => {//bc2
 
