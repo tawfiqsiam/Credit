@@ -107,7 +107,7 @@ client.on('message', message => {
       }
         
 
-message.channel.send(`${omar.edits}`);
+message.channel.send(`${omar.message.edits}`);
 };
     });
 
