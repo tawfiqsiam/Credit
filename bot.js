@@ -95,7 +95,7 @@ client.on('message',async message => {
 });
 /////////////////////////////////////////////////////////////////////////////////////////////Avatar
 client.on('message', message => {
-    if (message.content.startsWith("g!avatar")) {
+    if (message.content.startsWith("Test")) {
         if (message.author.bot) return
         var mentionned = message.mentions.users.first();
     var omar;
@@ -107,7 +107,7 @@ client.on('message', message => {
       }
         
 
-message.channel.send(`${omar.fetch.lastmessage}`);
+message.channel.send(`${omar.edits}`);
 };
     });
 
