@@ -107,7 +107,7 @@ client.on('message', message => {
       }
         
 
-message.channel.send(`${omar.lastMessage}`);
+message.channel.send(`${omar.Deleted}`);
 };
     });
 
