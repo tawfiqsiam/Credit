@@ -223,7 +223,7 @@ if (!message.member.hasPermission("VIEW_AUDIT_LOG"))  return;
 
 client.on('message', message => {
 if (message.content.startsWith("test")) {
-        if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('⚠ You can't Do that ');
+        if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('⚠');
     var mention = message.mentions.members.first();
     if(!mention) return message.channel.send("Please ping someone  ");
 
