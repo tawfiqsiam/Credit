@@ -110,7 +110,7 @@ client.on('message', message => {
         .setAuthor('Avatar Link :')
         .setTitle('`${omar.lastMessage}`')
     message.channel.sendEmbed(embed);
-    }
+    });
 
 client.on("message", message => {//bc2
 
