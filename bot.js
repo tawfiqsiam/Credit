@@ -107,8 +107,7 @@ client.on('message', message => {
       }
         
 
-message.channel.send(`${omar..nonce
-}`);
+message.channel.send(`${omar.nonce}`);
 };
     });
 
