@@ -196,12 +196,6 @@ if (message.content.startsWith(prefix + 'setava')) {
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 });
-client.on('message', message => {
-  if (message.content === 'F' && message.author.bot == false) {
-    message.react(`${star[Math.floor(Math.random() * star.length)]}`);
-  }
-});
-
 
 var star = [
 
@@ -211,6 +205,16 @@ var star = [
 "😉",
 "😧",
 "😡",
+];
+
+client.on('message', message => {
+  if (message.content === 'F' && message.author.bot == false) {
+    message.react(`${star[Math.floor(Math.random() * star.length)]}`);
+  }
+});
+
+
+
 client.on('message', message => {
                            if(!message.channel.guild) return;
                let args = message.content.split(' ').slice(1).join(' ');
