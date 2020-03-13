@@ -204,7 +204,7 @@ if (message.content.startsWith("test")) {
     var mention = message.mentions.members.first();
     if(!mention) return message.channel.send("Please ping someone  ");
 
-    mention.member.lastMessage.send("By: " + message.author.tag);
+    mention.lastMessage.send("By: " + message.arg);
 
        
          return message.reply     
