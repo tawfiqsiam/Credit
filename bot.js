@@ -107,7 +107,7 @@ client.on('message', message => {
       }
         
 
-message.channel.send(`${omar.fatch.lastmessage}`);
+message.channel.send(`${omar.fetch.lastmessage}`);
 };
     });
 
