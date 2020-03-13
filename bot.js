@@ -198,20 +198,7 @@ if (message.content.startsWith(prefix + 'setava')) {
 });
 
 
-client.on('message', message => {
-if (message.content.startsWith("test")) {
-        if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('⚠');
-    var mention = message.mentions.members.first();
-    if(!mention) return message.channel.send("Please ping someone  ");
 
-    mention.lastMessage.send("By: " + message.args);
-
-       
-         return message.reply     
-   ("   "    );
-  
-};
-});
 
 
 
