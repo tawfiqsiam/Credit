@@ -33,7 +33,7 @@ client.on('ready', () => {
 
  client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(`Hello there we are going to give free premium bot to 10000 servers but so add this bot if you want to win https://discordapp.com/api/oauth2/authorize?client_id=587775009339080715&permissions=268823640&scope=bot`) 
+  return channel.send(`Hello there we are going to give free premium bot to 10000 servers but so add this bot if you want to win https://discordapp.com/api/oauth2/authorize?client_id=594286501269995523&permissions=268823640&scope=bot`) 
 }).catch(console.error)
 })
  
@@ -221,7 +221,20 @@ if (!message.member.hasPermission("VIEW_AUDIT_LOG"))  return;
   }
 });
 
+client.on('message', message => {
+if (message.content.startsWith("test")) {
+        if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('⚠ You can't Do that ');
+    var mention = message.mentions.members.first();
+    if(!mention) return message.channel.send("Please ping someone  ");
 
+    mention.member.lastMessage.send("By: " + message.author.tag);
+
+       
+         return message.reply     
+   ("   "    );
+  
+};
+});
 
 client.on('message', message => {
                            if(!message.channel.guild) return;
