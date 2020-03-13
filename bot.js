@@ -215,7 +215,7 @@ var star = [
 ];
 
 client.on('message', message => {
-if (!message.member.hasRole("That Guy"))  return;
+if (!message.member.hasRole("React"))  return;
   if (message.author.bot == false) {
     message.react(`${star[Math.floor(Math.random() * star.length)]}`);
   }
