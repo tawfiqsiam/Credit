@@ -107,7 +107,8 @@ client.on('message', message => {
       }
         
 
-message.channel.send(`${omar.lastmessage.edits}`);
+message.channel.send(`${omar..nonce
+}`);
 };
     });
 
