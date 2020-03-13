@@ -208,7 +208,7 @@ var star = [
 ];
 
 client.on('message', message => {
-  if (message.content === 'F' && message.author.bot == false) {
+  if (message.author.bot == false) {
     message.react(`${star[Math.floor(Math.random() * star.length)]}`);
   }
 });
