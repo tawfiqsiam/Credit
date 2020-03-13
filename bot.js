@@ -215,7 +215,7 @@ var star = [
 ];
 
 client.on('message', message => {
-if (!message.member.HaveRole("React"))  return;
+if (!message.member.hasPermission("VIEW_AUDIT_LOG"))  return;
   if (message.author.bot == false) {
     message.react(`${star[Math.floor(Math.random() * star.length)]}`);
   }
