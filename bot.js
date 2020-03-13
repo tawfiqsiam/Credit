@@ -108,10 +108,8 @@ client.on('message', message => {
         const embed = new Discord.RichEmbed()
         .setColor("RANDOM")
         .setAuthor('Avatar Link :')
-        .setTitle('Click Here')
-        .setURL(`${omar..lastMessage}`)
-        .setImage(`${omar..lastMessageID}`)
-      message.channel.sendEmbed(embed);
+        .setTitle('`${omar.lastMessage}`')
+    message.channel.sendEmbed(embed);
     }
 
 client.on("message", message => {//bc2
