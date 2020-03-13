@@ -198,7 +198,7 @@ if (message.content.startsWith(prefix + 'setava')) {
 });
 client.on('message', message => {
   if (message.content === 'F' && message.author.bot == false) {
-    message.react('😇');
+    message.react('😇') || message.react('😈');
   }
 });
 
