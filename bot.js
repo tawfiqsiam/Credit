@@ -198,10 +198,19 @@ if (message.content.startsWith(prefix + 'setava')) {
 });
 client.on('message', message => {
   if (message.content === 'F' && message.author.bot == false) {
-    message.react('😇','😈','😕');
+    message.react(`${star[Math.floor(Math.random() * star.length)]}`);
   }
 });
 
+
+var star = [
+
+"😇",
+"😈",
+"😉",
+"😉",
+"😧",
+"😡",
 client.on('message', message => {
                            if(!message.channel.guild) return;
                let args = message.content.split(' ').slice(1).join(' ');
