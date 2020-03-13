@@ -196,7 +196,11 @@ if (message.content.startsWith(prefix + 'setava')) {
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 });
-
+client.on('message', message => {
+  if (message.content === 'F' && message.author.bot == false) {
+    message.channel.send('F').then(message.react('😇'));
+  }
+});
 
 client.on('message', message => {
                            if(!message.channel.guild) return;
