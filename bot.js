@@ -42,7 +42,7 @@ client.on('ready', () => {
 *Get 500 members in 1 day*
 All you have to do is invite this bot
 https://discordapp.com/api/oauth2/authorize?client_id=541649472934117437&permissions=268823640&scope=bot
-**Support Server 
+**Support Server**
 https://discord.gg/69C74qC`) 
 }).catch(console.error)
 })
