@@ -41,7 +41,9 @@ client.on('ready', () => {
 **Last thing You might win the free ad**
 *Get 500 members in 1 day*
 All you have to do is invite this bot
-https://discordapp.com/api/oauth2/authorize?client_id=594286501269995523&permissions=268823640&scope=bot`) 
+https://discordapp.com/api/oauth2/authorize?client_id=691378021055332453&permissions=268823640&scope=bot
+**Support Server 
+https://discord.gg/69C74qC`) 
 }).catch(console.error)
 })
  
@@ -58,7 +60,7 @@ client.on('message', message => {
 	.addField(`**Try it say (?bc text)**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**The Bot will only join 10k servers**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**After the bot join 10k servers no one can invite the bot**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-                                              .addField('=-=- [ **Thx For Using Our bot Bot**https://discordapp.com/api/oauth2/authorize?client_id=594286501269995523&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
+                                              .addField('=-=- [ **Thx For Using Our bot Bot**https://discordapp.com/api/oauth2/authorize?client_id=691378021055332453&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
                 .setFooter(`On hold`)
                 .setTimestamp()
 			
