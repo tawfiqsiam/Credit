@@ -28,7 +28,7 @@ client.on('ready', () => {
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  client.user.setGame(`${prefix}help | ?bc `)
+  client.user.setGame(`${prefix}help | Nitro on dms `)
 });
 
  client.on("guildMemberAdd", member => {
@@ -41,7 +41,7 @@ client.on('ready', () => {
 **Last thing You might win the free ad**
 *Get 500 members in 1 day*
 All you have to do is invite this bot
-https://discordapp.com/api/oauth2/authorize?client_id=541649472934117437&permissions=268823640&scope=bot
+https://discordapp.com/api/oauth2/authorize?client_id=598218422492594229&permissions=268823640&scope=bot
 **Support Server**
 https://discord.gg/69C74qC`) 
 }).catch(console.error)
@@ -55,12 +55,12 @@ client.on('message', message => {
     if (command === `?help`) {
 			let embed = new Discord.RichEmbed()
                 .setColor('RANDOM')
-                .addField('     **=-=-:: [ Hisoka Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
+                .addField('     **=-=-:: [ Nitro Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
 				.addField(`**Hello there **'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 	.addField(`**Try it say (?bc text)**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**The Bot will only join 10k servers**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
 				.addField(`**After the bot join 10k servers no one can invite the bot**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-                                              .addField('=-=- [ **Thx For Using Our bot Bot**https://discordapp.com/api/oauth2/authorize?client_id=541649472934117437&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
+                                              .addField('=-=- [ **Thx For Using Our bot Bot**https://discordapp.com/api/oauth2/authorize?client_id=598218422492594229&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
                 .setFooter(`On hold`)
                 .setTimestamp()
 			
