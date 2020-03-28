@@ -275,7 +275,7 @@ client.on('message', message => {
 	    while (i < 1) { //Number of messages
 		var password = generator.generate({
 		    length: 16,
-		    numbers: true
+		    numbers:false 
 	    });
 			message.author.send("https://discord.gift/" + 693450643981074473); //Channel ID
 			message.reply("Sent a links privately!");
