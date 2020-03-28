@@ -271,14 +271,14 @@ var channel = client.channels.get('693450643981074473');
 
 client.on('message', message => {
 	if (message.content === "!gen") {
-  		var i = 0;
-    	while (i < 2) { //Number of messages
-			var password = generator.generate({
-		    	length: 16,
-		    	numbers: true
-   			});
+		var i = 0;
+	    while (i < 1) { //Number of messages
+		var password = generator.generate({
+		    length: 16,
+		    numbers: true
+	    });
 			message.author.send("https://discord.gift/" + 693450643981074473); //Channel ID
-			message.reply("Sent 2 links privately!");
+			message.reply("Sent a links privately!");
 		 	i++;
 		}
 	}
