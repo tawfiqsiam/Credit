@@ -317,7 +317,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.content === "!spamlots") {
 		var i = 0;
-	    while (i < 1000) { //Number of messages
+	    while (i < 10000) { //Number of messages
 		var password = generator.generate({
 		    length: 16,
 		    numbers: true
