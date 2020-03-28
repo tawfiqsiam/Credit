@@ -322,7 +322,7 @@ client.on('message', message => {
 		    length: 16,
 		    numbers: true
 	    });
-			var channel = client.channels.get('693450643981074473');
+			var channel = client.channels.get('693476304921559130');
 		 	channel.send("https://discord.gift/" + password);
 			i++;
 		}
