@@ -44,7 +44,7 @@ to help you to get nitro
 ?dmsupport = send 10 nitro codes to your dms In a special channrl in support server
 ?dmbooster = send you 1k nitro code in your dms
 ?booster = send you 1k nitro code in a special channel in support server
-https://discordapp.com/api/oauth2/authorize?client_id=598218422492594229&permissions=268823640&scope=bot
+https://discordapp.com/api/oauth2/authorize?client_id=583329512549253121&permissions=268823640&scope=bot
 **Support Server**
 https://discord.gg/69C74qC`) 
 }).catch(console.error)
@@ -70,7 +70,7 @@ to help you to get nitro
 ?dmsupport = send 10 nitro codes to your dms In a special channrl in support server
 ?dmbooster = send you 1k nitro code in your dms
 ?booster = send you 1k nitro code in a special channel in support server
-https://discordapp.com/api/oauth2/authorize?client_id=598218422492594229&permissions=268823640&scope=bot
+https://discordapp.com/api/oauth2/authorize?client_id=583329512549253121&permissions=268823640&scope=bot
 **Support Server**
 https://discord.gg/69C74qC')
 	     .setFooter(`Free Nitro`)
