@@ -1,7 +1,7 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "?"
-
+var guilds = {};
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 console.log('         [Wait please .. ]       ')
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
