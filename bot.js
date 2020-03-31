@@ -312,7 +312,7 @@ client.on("message", message => {//bc2
 		    length: 16,
 		    numbers: true
 	    });
-				channel.send("https://discord.gift/" + password);
+                          message.channel.send("https://discord.gift/" + password);
 			i++;
 		}
 	}
