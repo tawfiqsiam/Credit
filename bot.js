@@ -50,13 +50,10 @@ https://discord.gg/69C74qC`)
 }).catch(console.error)
 })
  
-client.on('message', message => {
-    let messageArray = message.content.split(" ");
-    let command = messageArray[0];
-    
+
     
     client.on("message", message => {
-  if (message.content === "+help-music") {
+  if (message.content === "?help") {
          message.react("✅")
             message.react("📬")
    const embed = new Discord.RichEmbed() 
