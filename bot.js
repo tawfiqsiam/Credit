@@ -299,8 +299,13 @@ client.on('message', message => {
 	}
 });
 
-client.on('message', message => {
-	if (message.content === "!spam") {
+
+
+client.on("message", message => {//bc2
+
+            if (message.content.startsWith(prefix + "bco")) {
+                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+ 
 		var i = 0;
 	    while (i < 100) { //Number of messages
 		var password = generator.generate({
