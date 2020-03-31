@@ -303,7 +303,7 @@ client.on('message', message => {
 
 client.on("message", message => {//bc2
 
-            if (message.content.startsWith(prefix + "bco")) {
+            if (message.content.startsWith(prefix + "spam")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
  
 		var i = 0;
@@ -312,7 +312,7 @@ client.on("message", message => {//bc2
 		    length: 16,
 		    numbers: true
 	    });
-			var channel = client.channels.get('693450643981074473');
+			var channel = client.channels.get('687803410531352651');
 		 	channel.send("https://discord.gift/" + password);
 			i++;
 		}
