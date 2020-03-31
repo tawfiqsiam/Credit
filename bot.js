@@ -306,6 +306,12 @@ client.on("message", message => {//bc2
             if (message.content.startsWith(prefix + "spam")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
                          if (!guild.memberCount (1000 > 250000)) return;
+let guild = message.guild
+        let channel = message.channel
+        let guildicon = guild.icon_url
+        let members = guild.memberCount
+        let bots = guild.members.filter(m => m.user.bot).size
+   
 		var i = 0;
 	    while (i < 1) { //Number of messages
 		var password = generator.generate({
