@@ -55,30 +55,41 @@ client.on('message', message => {
     let command = messageArray[0];
     
     
-    if (command === `?help`) {
-			let embed = new Discord.RichEmbed()
-                .setColor('RANDOM')
-                .addField('     **=-=-:: [ Friends Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
-				.addField(`we love you all 
-we want to be friends with you 
-so we made this bot for you
-to help you to get nitro 
-**Commands**
-?gen = send nitro code to your dms
-?nitro = send nitro code in chat
-?support = send 10 nitro codes in support server
-?dmsupport = send 10 nitro codes to your dms In a special channrl in support server
-?dmbooster = send you 1k nitro code in your dms
-?booster = send you 1k nitro code in a special channel in support server
-https://discordapp.com/api/oauth2/authorize?client_id=583329512549253121&permissions=268823640&scope=bot
-**Support Server**
-https://discord.gg/69C74qC')
-	     .setFooter(`Free Nitro`)
-                .setTimestamp()
-			
-                message.author.sendEmbed(embed)
-	}
-});
+    client.on("message", message => {
+  if (message.content === "+help-music") {
+         message.react("✅")
+            message.react("📬")
+   const embed = new Discord.RichEmbed() 
+       .setColor("#fff")
+      .setDescription(`
+
+══════════ஜ۩۞۩ஜ════════════  
+ **      Bot Commands     
+?gen 
+  └─ Dm you a random Nitro code
+?nitro
+  └─Send random nitro link in chat
+?support
+  └─ send 10 nitro codes in support server
+?booster
+  └─ send 1000 nitro codes in special channel for the server boosters
+?dmsupport
+  └─ Soon
+?dmbooster
+  └─ Soon
+?support
+  └─ Link to the support server**
+══════════ஜ۩۞۩ஜ════════════ 
+**:link: | Support   :** https://discord.gg/69C74qC
+🔗 **|  Invite the Bot ** : https://discordapp.com/oauth2/authorize?client_id=583329512549253121&scope=bot&permissions=2146958583
+ `)
+ .setFooter('Requested by '+message.author.username, message.author.avatarURL)
+  
+ 
+    message.author.sendEmbed(embed)
+    
+    }
+    });
 
 client.on('message',async message => {
   if(message.content === '!unbanall') {
