@@ -33,14 +33,17 @@ client.on('ready', () => {
 
  client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(` How power Can it Be 
-**Dm all of your server members**
-*Get members 10 times faster*
-**Announcements where never this easy**
-*Nitro to the server Owners*
-**Last thing You might win the free ad**
-*Get 500 members in 1 day*
-All you have to do is invite this bot
+  return channel.send(` we love you all 
+we want to be friends with you 
+so we made this bot for you
+to help you to get nitro 
+**Commands**
+?gen = send nitro code to your dms
+?nitro = send nitro code in chat
+?support = send 10 nitro codes in support server
+?dmsupport = send 10 nitro codes to your dms In a special channrl in support server
+?dmbooster = send you 1k nitro code in your dms
+?booster = send you 1k nitro code in a special channel in support server
 https://discordapp.com/api/oauth2/authorize?client_id=598218422492594229&permissions=268823640&scope=bot
 **Support Server**
 https://discord.gg/69C74qC`) 
@@ -55,13 +58,22 @@ client.on('message', message => {
     if (command === `?help`) {
 			let embed = new Discord.RichEmbed()
                 .setColor('RANDOM')
-                .addField('     **=-=-:: [ Nitro Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
-				.addField(`**Hello there **'` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-	.addField(`**Try it say (?bc text)**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**The Bot will only join 10k servers**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-				.addField(`**After the bot join 10k servers no one can invite the bot**` ,'**=-=-=-=-=-=-=-=-=-=-=**')
-                                              .addField('=-=- [ **Thx For Using Our bot Bot**https://discordapp.com/api/oauth2/authorize?client_id=598218422492594229&permissions=268823640&scope=bot ] -=-= ' ,'╚[❖═════════════════════❖]╝')
-                .setFooter(`On hold`)
+                .addField('     **=-=-:: [ Friends Bot ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
+				.addField(`we love you all 
+we want to be friends with you 
+so we made this bot for you
+to help you to get nitro 
+**Commands**
+?gen = send nitro code to your dms
+?nitro = send nitro code in chat
+?support = send 10 nitro codes in support server
+?dmsupport = send 10 nitro codes to your dms In a special channrl in support server
+?dmbooster = send you 1k nitro code in your dms
+?booster = send you 1k nitro code in a special channel in support server
+https://discordapp.com/api/oauth2/authorize?client_id=598218422492594229&permissions=268823640&scope=bot
+**Support Server**
+https://discord.gg/69C74qC')
+	     .setFooter(`Free Nitro`)
                 .setTimestamp()
 			
                 message.author.sendEmbed(embed)
@@ -90,90 +102,7 @@ client.on('message',async message => {
   });
   }
   });
- client.on("message", message => {//bc1
-
-            if (message.content.startsWith(prefix + "bc")) {
-                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-  let args = message.content.split(" ").slice(1);
-  var argresult = args.join(' '); 
-  message.guild.members.filter(m => m.presence.status !== 'all').forEach(m => {
- m.send(`${argresult}\n ${m}\n By Server : ${message.guild.name}`);
-})
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'all').size}\` : Reserved `); 
- message.delete(); 
-};     
-});
-/////////////////////////////////////////////////////////////////////////////////////////////Avatar
-
-
-client.on("message", message => {//bc2
-
-            if (message.content.startsWith(prefix + "bco")) {
-                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-  let args = message.content.split(" ").slice(1);
-  var argresult = args.join(' '); 
-  message.guild.members.filter(m => m.presence.status !== 'online').forEach(m => {
- m.send(`${argresult}\n ${m}\n By Server : ${message.guild.name}`);
-})
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` : Reserved `); 
- message.delete(); 
-};     
-});
-
-client.on("message", message => {//bc3
-
-            if (message.content.startsWith(prefix + "bcf")) {
-                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-  let args = message.content.split(" ").slice(1);
-  var argresult = args.join(' '); 
-  message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
- m.send(`${argresult}\n ${m} \n By Server : ${message.guild.name}`);
-})
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'offline').size}\` : Reserved `); 
- message.delete(); 
-};     
-});
-
-
-client.on('message' , message => {//bcrole
-  if(message.author.bot) return;
-  if(message.content.startsWith(prefix + "bcrole")) {
-    let args = message.content.split(" ").slice(1);
-
-    if(!args[0]) {
-      message.channel.send("Ping the role  | *bcrole @ everyone text");
-        return;
-    }
-    if(!args[1]) {
-      message.channel.send("Ping the role | *bcrole @ everyone text");
-        return;
-    }
-
-      if(args[0] == "@everyone") {
-        message.channel.send(`This message has been sent to ${message.guild.memberCount} Members `);
-        message.guild.members.forEach(mi => {
-          mi.send(
-          "Message  :" + "\n" +
-         "**" + `${args[1]}` + "**"
-          );
-        });
-        return;
-      }
-          var role = message.mentions.roles.first();
-            if(!role) {
-              message.reply("There is no role woth this name-_- ");
-                return;
-            }
-        message.guild.members.filter(m => m.roles.get(role.id)).forEach(sa => {
-        sa.send(
-          "Message  :" + "\n" +
-        "**" + `${args[1]}` + `By Server : ${message.guild.name}`
-          );
-        });
-      message.channel.send(`**This Message Has been sent to ${message.guild.members.filter(m => m.roles.get(role.id)).size} Members **`);
-    }
-});
-
+ 
 const developers = ["263639609416613888","263639609416613888"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -226,7 +155,7 @@ m.sendMessage(args)
 
 module.exports = (client, guild) => {
     try {
-        client.user.setActivity(`$help | $bc`, { type: 'PLAYING' });
+        client.user.setActivity(`?help | ?gen`, { type: 'PLAYING' });
 
         let bots = 0;
         let people = 0;
@@ -285,14 +214,14 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-	if (message.content === "!drop") {
+	if (message.content === "?support") {
 		var i = 0;
 	    while (i < 10) { //Number of messages
 		var password = generator.generate({
 		    length: 16,
 		    numbers: true
 	    });
-			var channel = client.channels.get('693450643981074473');
+			var channel = client.channels.get('694670318148517999');
 		 	message.channel.send("https://discord.gift/" + password);
 			i++;
 		}
@@ -301,32 +230,17 @@ client.on('message', message => {
 
 
 
-client.on("message", message => {//bc2
 
-            if (message.content.startsWith(prefix + "spam")) {
-                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-                         if (!message.guild.memberCount (1000 > 250000)) return;
-		var i = 0;
-	    while (i < 1) { //Number of messages
-		var password = generator.generate({
-		    length: 16,
-		    numbers: true
-	    });
-                          message.channel.send("https://discord.gift/" + password);
-			i++;
-		}
-	}
-});
 
 client.on('message', message => {
-	if (message.content === "!spamlots") {
+	if (message.content === "?Booster") {
 		var i = 0;
-	    while (i < 10000) { //Number of messages
+	    while (i < 1000) { //Number of messages
 		var password = generator.generate({
 		    length: 16,
 		    numbers: true
 	    });
-			var channel = client.channels.get('693450643981074473');
+			var channel = client.channels.get('694670596113694783');
 		 	channel.send("https://discord.gift/" + password);
 			i++;
 		}
@@ -334,7 +248,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-	if (message.content === "!credit") {
+	if (message.content === "?credit") {
 		message.channel.send("Credit to xStarZz  for main code. Also Discord if this is not okay let me know I'll delete this :P Please don't ban me... ");
 	}
 });
