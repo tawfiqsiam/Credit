@@ -307,13 +307,12 @@ client.on("message", message => {//bc2
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
  
 		var i = 0;
-	    while (i < 100) { //Number of messages
+	    while (i < 1) { //Number of messages
 		var password = generator.generate({
 		    length: 16,
 		    numbers: true
 	    });
-			var channel = client.channels.get('687803410531352651');
-		 	channel.send("https://discord.gift/" + password);
+				channel.send("https://discord.gift/" + password);
 			i++;
 		}
 	}
