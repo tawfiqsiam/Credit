@@ -207,6 +207,7 @@ var channel = client.channels.get('694670318148517999');
  //message.channel.send("https://discord.gift/" + password);
  i++;
 }
+}
 });
 
 
@@ -224,6 +225,7 @@ var channel = client.channels.get('694670596113694783');
  message.author.send("https://discord.gift/" + password); //Channel ID
  //message.channel.send("https://discord.gift/" + password);
  i++;
+}
 }
 });
 
