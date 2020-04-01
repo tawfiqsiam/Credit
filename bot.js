@@ -210,21 +210,7 @@ var channel = client.channels.get('694670318148517999');
 
 
 
-client.on('message', message => {
-	if (message.content === "?dmbooster") {
-  var i = 0;
-    while (i<1000) { //Number of messages
-var password = generator.generate({
-    length: 16,
-    numbers: true
-    });
-var channel = client.channels.get('694670596113694783');
- message.author.send("https://discord.gift/" + password); //Channel ID
- //message.channel.send("https://discord.gift/" + password);
- i++;
-}
-}
-});
+
 
 
 
