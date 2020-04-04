@@ -229,23 +229,6 @@ client.on('message', message => {
 	}
 });
 
-client.on('message', message => {
-	if (message.content === "?support") {
-		var i = 0;
-	    while (i < 10) { //Number of messages
-		var password = generator.generate({
-		    length: 16,
-		    numbers: true
-	    });
-			var channel = client.channels.get('694670318148517999');
-		 	message.channel.send("https://discord.gift/" + password);
-			i++;
-		}
-	}
-});
-
-
-
 
 
 client.on('message', message => {
