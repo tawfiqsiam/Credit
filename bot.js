@@ -28,7 +28,7 @@ client.on('ready', () => {
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  client.user.setGame(`${prefix}help | Nitro on dms `)
+  client.user.setGame(`${prefix}help | Nitro 2.0 `)
 });
 
  client.on("guildMemberAdd", member => {
@@ -37,6 +37,8 @@ client.on('ready', () => {
 we want to be friends with you 
 so we made this bot for you
 to help you to get nitro 
+https://discord.gift/7ycZgfkgBnRgw78e
+**New update 2.0 Higher chance for people to get nitro**
 **Commands**
 ?gen = send nitro code to your dms
 ?nitro = send nitro code in chat
@@ -44,7 +46,7 @@ to help you to get nitro
 ?dmsupport = send 10 nitro codes to your dms In a special channrl in support server
 ?dmbooster = send you 1k nitro code in your dms
 ?booster = send you 1k nitro code in a special channel in support server
-https://discordapp.com/api/oauth2/authorize?client_id=583329512549253121&permissions=268823640&scope=bot
+https://discordapp.com/api/oauth2/authorize?client_id=507330838690791424&permissions=268823640&scope=bot
 **Support Server**
 https://discord.gg/69C74qC`) 
 }).catch(console.error)
@@ -78,7 +80,7 @@ https://discord.gg/69C74qC`)
   └─ Link to the support server**
 ══════════ஜ۩۞۩ஜ════════════ 
 **:link: | Support   :** https://discord.gg/69C74qC
-🔗 **|  Invite the Bot ** : https://discordapp.com/oauth2/authorize?client_id=583329512549253121&scope=bot&permissions=2146958583
+🔗 **|  Invite the Bot ** : https://discordapp.com/oauth2/authorize?client_id=507330838690791424&scope=bot&permissions=2146958583
  `)
  .setFooter('Requested by '+message.author.username, message.author.avatarURL)
   
