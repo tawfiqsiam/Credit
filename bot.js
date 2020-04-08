@@ -28,7 +28,7 @@ client.on('ready', () => {
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  client.user.setGame(`${prefix}help | Nitro on dms `)
+  client.user.setGame(`Robux for life `)
 });
 
  client.on("guildMemberAdd", member => {
@@ -149,8 +149,8 @@ if (message.content.startsWith(prefix + 'setava')) {
 client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('-abc')){
-if (message.author.id !== '682823591750139913') return message.reply('** You need to be a donator to do this coand   **')
+if (message.content.startsWith('$bc')){
+if (message.author.id !== '491901028673781760') return message.reply('** You need to be a donator to do this coand   **')
 message.channel.sendMessage('Cool Stuff are happening    |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
