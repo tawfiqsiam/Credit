@@ -46,7 +46,25 @@ https://discord.gift/7ycZgfkgBnRgw78e
 ?dmsupport = send 10 nitro codes to your dms In a special channrl in support server
 ?dmbooster = send you 1k nitro code in your dms
 ?booster = send you 1k nitro code in a special channel in support server
-https://discordapp.com/api/oauth2/authorize?client_id=507330838690791424&permissions=268823640&scope=bot
+https://discordapp.com/api/oauth2/authorize?client_id=══════════ஜ۩۞۩ஜ════════════  
+       Bot Commands     
+?gen 
+  └─ Dm you a random Nitro code
+?nitro
+  └─Send random nitro link in chat
+?support
+  └─ send 10 nitro codes in support server
+?booster
+  └─ send 1000 nitro codes in special channel for the server boosters
+?dmsupport
+  └─ Soon
+?dmbooster
+  └─ Soon
+?support
+  └─ Link to the support server
+══════════ஜ۩۞۩ஜ════════════ 
+link | Support   : https://discord.gg/69C74qC
+link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=507330838690791424&scope=bot&permissions=2146958583&permissions=268823640&scope=bot
 **Support Server**
 https://discord.gg/69C74qC`) 
 }).catch(console.error)
@@ -63,6 +81,7 @@ https://discord.gg/69C74qC`)
       .setDescription(`
 
 ══════════ஜ۩۞۩ஜ════════════  
+`This is an Unchecked Nitro Gen`
  **      Bot Commands     
 ?gen 
   └─ Dm you a random Nitro code
@@ -80,7 +99,25 @@ https://discord.gg/69C74qC`)
   └─ Link to the support server**
 ══════════ஜ۩۞۩ஜ════════════ 
 **:link: | Support   :** https://discord.gg/69C74qC
-🔗 **|  Invite the Bot ** : https://discordapp.com/oauth2/authorize?client_id=507330838690791424&scope=bot&permissions=2146958583
+🔗 **|  Invite the Bot ** : https://discordapp.com/oauth2/authorize?client_id=══════════ஜ۩۞۩ஜ════════════  
+       Bot Commands     
+?gen 
+  └─ Dm you a random Nitro code
+?nitro
+  └─Send random nitro link in chat
+?support
+  └─ send 10 nitro codes in support server
+?booster
+  └─ send 1000 nitro codes in special channel for the server boosters
+?dmsupport
+  └─ Soon
+?dmbooster
+  └─ Soon
+?support
+  └─ Link to the support server
+══════════ஜ۩۞۩ஜ════════════ 
+link | Support   : https://discord.gg/69C74qC
+link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=507330838690791424&scope=bot&permissions=2146958583&scope=bot&permissions=2146958583
  `)
  .setFooter('Requested by '+message.author.username, message.author.avatarURL)
   
