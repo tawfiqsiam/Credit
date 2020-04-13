@@ -81,7 +81,7 @@ https://discord.gg/69C74qC`)
       .setDescription(`
 
 ══════════ஜ۩۞۩ஜ════════════  
-`This is an Unchecked Nitro Gen`
+This is an Unchecked Nitro Gen
  **      Bot Commands     
 ?gen 
   └─ Dm you a random Nitro code
