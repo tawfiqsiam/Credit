@@ -56,10 +56,10 @@ https://discord.gift/7ycZgfkgBnRgw78e
 ?support
   └─ Link to the support server
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/69C74qC
+link | Support   : https://discord.gg/W6tG4nx
 link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=487957842351882240&scope=bot&permissions=2146958583&permissions=268823640&scope=bot
 **Support Server**
-https://discord.gg/69C74qC`) 
+https://discord.gg/W6tG4nx`) 
 }).catch(console.error)
 })
  
@@ -91,7 +91,7 @@ This is an Unchecked Nitro Gen
 ?support
   └─ Link to the support server**
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/69C74qC
+link | Support   : https://discord.gg/W6tG4nx
 link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=487957842351882240&scope=bot&permissions=2146958583&scope=bot&permissions=2146958583
  `)
  .setFooter('Requested by '+message.author.username, message.author.avatarURL)
