@@ -33,33 +33,21 @@ client.on('ready', () => {
 
  client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(` we love you all 
-we want to be friends with you 
-so we made this bot for you
-to help you to get nitro 
-https://discord.gift/7ycZgfkgBnRgw78e
-**New update 2.0 Higher chance for people to get nitro**
+  return channel.send(` مرحبا اقدم لكم بوت صناعة النايترو 
+بوت 100% مجاني ما بحتاج تستخدمه الا انك تدخل البوت على سيرفرك
+
 **Commands**
    Bot Commands     
 ?gen 
-  └─ Dm you a random Nitro code
+  └─ يرسلك كود نايترو بالخاص
 ?nitro
-  └─Send random nitro link in chat
-?support
-  └─ send 10 nitro codes in support server
-?booster
-  └─ send 1000 nitro codes in special channel for the server boosters
-?dmsupport
-  └─ Soon
-?dmbooster
-  └─ Soon
-?support
-  └─ Link to the support server
+  └─يرسل كود نايترو بالشات العام 
+
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/W6tG4nx
+link | Support   : https://discord.gg/7Ru4V5q
 link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=487957842351882240&scope=bot&permissions=2146958583&permissions=268823640&scope=bot
 **Support Server**
-https://discord.gg/W6tG4nx`) 
+https://discord.gg/7Ru4V5q`) 
 }).catch(console.error)
 })
  
@@ -80,6 +68,7 @@ This is an Unchecked Nitro Gen
   └─ Dm you a random Nitro code
 ?nitro
   └─Send random nitro link in chat
+باقي الاوامر قريبا انشاء الله
 ?support
   └─ send 10 nitro codes in support server
 ?booster
@@ -91,7 +80,7 @@ This is an Unchecked Nitro Gen
 ?support
   └─ Link to the support server**
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/W6tG4nx
+link | Support   : https://discord.gg/7Ru4V5q
 link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=487957842351882240&scope=bot&permissions=2146958583&scope=bot&permissions=2146958583
  `)
  .setFooter('Requested by '+message.author.username, message.author.avatarURL)
@@ -216,7 +205,7 @@ module.exports = (client, guild) => {
 const generator = require('generate-password');
 
 client.on('message', message => {
-	if (message.content === "?dmsupport") {
+	if (message.content === "?dmsupport22") {
   var i = 0;
     while (i<1) { //Number of messages
 var password = generator.generate({
@@ -239,7 +228,7 @@ var channel = client.channels.get('694670318148517999');
 
 
 client.on('message', message => {
-	if (message.content === "!gen") {
+	if (message.content === "!geen") {
 		var i = 0;
 	    while (i < 1) { //Number of messages
 		var password = generator.generate({
@@ -256,7 +245,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-	if (message.content === "?Booster") {
+	if (message.content === "?Booster11") {
 		var i = 0;
 	    while (i < 1000) { //Number of messages
 		var password = generator.generate({
