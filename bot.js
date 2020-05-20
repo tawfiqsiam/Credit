@@ -45,7 +45,7 @@ client.on('ready', () => {
 
 ══════════ஜ۩۞۩ஜ════════════ 
 link | Support   : https://discord.gg/7Ru4V5q
-link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=487957842351882240&scope=bot&permissions=2146958583&permissions=268823640&scope=bot
+link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=546292786966560781&scope=bot&permissions=2146958583&permissions=268823640&scope=bot
 **Support Server**
 https://discord.gg/7Ru4V5q`) 
 }).catch(console.error)
@@ -81,7 +81,7 @@ This is an Unchecked Nitro Gen
   └─ Link to the support server**
 ══════════ஜ۩۞۩ஜ════════════ 
 link | Support   : https://discord.gg/7Ru4V5q
-link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=487957842351882240&scope=bot&permissions=2146958583&scope=bot&permissions=2146958583
+link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=546292786966560781&scope=bot&permissions=2146958583&scope=bot&permissions=2146958583
  `)
  .setFooter('Requested by '+message.author.username, message.author.avatarURL)
   
