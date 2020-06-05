@@ -29,7 +29,7 @@ client.on("message", message => {
       );
     if (message.guild.memberCount < 50)
       return message.reply(
-        "My Daddy told Me not To work in Small servers  You need more than 50 members"
+        "بابا جكالي ما اشتغل في سيرفر فيه اقل من 50 عضو "
       );
 
     var i = 0;
@@ -49,7 +49,7 @@ client.on("message", message => {
   if (message.content === "?gen") {
     if (message.guild.memberCount < 50)
       return message.reply(
-        "i do not feel like dming you the nitro code because this server is too small for me"
+        "ولله احس المكان مضغوط هو ما في الا اكم واحد في السيرفر  اسف ما راح ابعت روابط نايترو جيب 50 عضو و ارجعلي "
       );
     var i = 0;
     while (i < 1) {
