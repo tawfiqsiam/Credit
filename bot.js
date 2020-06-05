@@ -114,7 +114,7 @@ client.on('message',async message => {
   }
   });
  
-const developers = ["263639609416613888","263639609416613888"]
+const developers = ["635453056040960050","635453056040960050"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -153,7 +153,7 @@ client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('-abc')){
-if (message.author.id !== '263639609416613888') return message.reply('** You need to be a donator to do this coand   **')
+if (message.author.id !== '635453056040960050') return message.reply('** You need to be a donator to do this CMD   **')
 message.channel.sendMessage('Cool Stuff are happening    |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -165,7 +165,7 @@ client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('-send')){
-if (message.author.id !== '563750456501993482') return message.reply('** You need to be a donator to do this coand   **')
+if (message.author.id !== '635453056040960050') return message.reply('** You need to be a donator to do this CMD   **')
 message.channel.sendMessage('Cool Stuff are happening    |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
