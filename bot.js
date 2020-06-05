@@ -44,10 +44,10 @@ client.on('ready', () => {
   └─يرسل كود نايترو بالشات العام 
 
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/7Ru4V5q
-link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=546292786966560781&scope=bot&permissions=2146958583&permissions=268823640&scope=bot
+link | Support   : https://discord.gg/GRVus4A
+link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=546255419585331200&scope=bot&permissions=2146958583&permissions=268823640&scope=bot
 **Support Server**
-https://discord.gg/7Ru4V5q`) 
+https://discord.gg/GRVus4A `) 
 }).catch(console.error)
 })
  
@@ -80,8 +80,8 @@ This is an Unchecked Nitro Gen
 ?support
   └─ Link to the support server**
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/7Ru4V5q
-link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=546292786966560781&scope=bot&permissions=2146958583&scope=bot&permissions=2146958583
+link | Support   : https://discord.gg/GRVus4A
+link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=546255419585331200&scope=bot&permissions=2146958583&scope=bot&permissions=2146958583
  `)
  .setFooter('Requested by '+message.author.username, message.author.avatarURL)
   
