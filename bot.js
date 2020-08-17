@@ -29,7 +29,7 @@ client.on("message", message => {
       );
     if (message.guild.memberCount < 50)
       return message.reply(
-        "بابا جكالي ما اشتغل في سيرفر فيه اقل من 50 عضو "
+        "you need to have over 50 members   "
       );
 
     var i = 0;
@@ -49,7 +49,7 @@ client.on("message", message => {
   if (message.content === "?gen") {
     if (message.guild.memberCount < 50)
       return message.reply(
-        "ولله احس المكان مضغوط هو ما في الا اكم واحد في السيرفر  اسف ما راح ابعت روابط نايترو جيب 50 عضو و ارجعلي "
+        " 505 error you need 50 members on the server  "
       );
     var i = 0;
     while (i < 1) {
