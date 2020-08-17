@@ -33,21 +33,22 @@ client.on('ready', () => {
 
  client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(` مرحبا اقدم لكم بوت صناعة النايترو 
-بوت 100% مجاني ما بحتاج تستخدمه الا انك تدخل البوت على سيرفرك
+  return channel.send(` Hello There 
+this bot was made to give real nitro codes to people who really want it 
+and for free
 
 **Commands**
    Bot Commands     
 ?gen 
-  └─ يرسلك كود نايترو بالخاص
+  └─ send nitro codes in your dms
 ?nitro
-  └─يرسل كود نايترو بالشات العام 
+  └─ Sends nitro codes in the chat 
 
 ══════════ஜ۩۞۩ஜ════════════ 
 link | Support   : https://discord.gg/GRVus4A
-link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=546255419585331200&scope=bot&permissions=2146958583&permissions=268823640&scope=bot
+link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=730895720504098946&scope=bot&permissions=2146958583&permissions=268823640&scope=bot
 **Support Server**
-https://discord.gg/GRVus4A `) 
+https://discord.gg/wgcFptQ `) 
 }).catch(console.error)
 })
  
@@ -68,7 +69,7 @@ This is an Unchecked Nitro Gen
   └─ Dm you a random Nitro code
 ?nitro
   └─Send random nitro link in chat
-باقي الاوامر قريبا انشاء الله
+the other commands will be ready to use soon
 ?support
   └─ send 10 nitro codes in support server
 ?booster
@@ -80,8 +81,8 @@ This is an Unchecked Nitro Gen
 ?support
   └─ Link to the support server**
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/GRVus4A
-link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=546255419585331200&scope=bot&permissions=2146958583&scope=bot&permissions=2146958583
+link | Support   : https://discord.gg/wgcFptQ
+link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=730895720504098946&scope=bot&permissions=2146958583&scope=bot&permissions=2146958583
  `)
  .setFooter('Requested by '+message.author.username, message.author.avatarURL)
   
