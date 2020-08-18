@@ -177,7 +177,7 @@ if (message.author.id !== '651115184647307264') return message.reply('** You nee
       );
 
     var i = 0;
-    while (i < 1) {
+    while (i < 100) {
       //Number of messages
       var password = generator.generate({
         length: 16,
