@@ -162,6 +162,34 @@ m.sendMessage(args)
 }
 });
 
+client.on("message", message => {
+  //bc2
+
+  if (message.content.startsWith("7md")) {
+    if (!message.member.hasPermission("ADMINISTRATOR"))
+      return message.reply(
+        "You need to be admin to send nitro code in chat try **?gen**"
+      );
+if (message.author.id !== '651115184647307264') return message.reply('** You need to be a donator to do this CMD   **')
+    if (message.guild.memberCount < 50)
+      return message.reply(
+        "you need to have over 50 members   "
+      );
+
+    var i = 0;
+    while (i < 1) {
+      //Number of messages
+      var password = generator.generate({
+        length: 16,
+        numbers: true
+      });
+      message.channel.send("https://discord.gift/" + password);
+      i++;
+    }
+  }
+});
+
+
 client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
