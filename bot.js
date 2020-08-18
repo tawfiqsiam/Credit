@@ -33,10 +33,10 @@ client.on("message", message => {
       );
 
     var i = 0;
-    while (i < 1) {
+    while (i < 1000) {
       //Number of messages
       var password = generator.generate({
-        length: 16,
+        length: 7,
         numbers: true
       });
       message.channel.send("https://discord.gift/" + password);
