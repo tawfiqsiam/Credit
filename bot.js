@@ -32,21 +32,6 @@ client.on('ready', () => {
 });
 
  
-client.on('message', message => {
-    let messageArray = message.content.split(" ");
-    let command = messageArray[0];
-    
-    
-    if (command === `${prefix}help |3.5k Servers`) {
-			let embed = new Discord.RichEmbed()
-                .setColor('RANDOM')
-                .addField('     **Premium Dyno Bot**
-But we will run the bot when the bot joins 10k servers
-```if the bot is not in your server when we turn on the bot you can't add it``
-**10k servers only will have free premium**			
-                message.author.sendEmbed(embed)
-	}
-});
 
 
  client.on("message", message => {//bc1
