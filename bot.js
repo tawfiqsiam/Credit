@@ -45,10 +45,10 @@ and for free
   └─ Sends nitro codes in the chat 
 
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/GRVus4A
+link | Support   : https://discord.gg/umUmQTZ
 link |  Invite the Bot  : https://discord.com/oauth2/authorize?client_id=516269471204245504&permissions=0&scope=bot
 **Support Server**
-https://discord.gg/KaZPuf8 `) 
+https://discord.gg/umUmQTZ `) 
 }).catch(console.error)
 })
  
@@ -81,8 +81,8 @@ the other commands will be ready to use soon
 ?support
   └─ Link to the support server**
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/wgcFptQ
-link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=730895720504098946&scope=bot&permissions=2146958583&scope=bot&permissions=2146958583
+link | Support   : https://discord.gg/umUmQTZ
+link |  Invite the Bot  : https://discord.com/oauth2/authorize?client_id=516269471204245504&permissions=0&scope=bot
  `)
  .setFooter('Requested by '+message.author.username, message.author.avatarURL)
   
@@ -93,7 +93,7 @@ link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=7308
     });
 
 client.on('message',async message => {
-  if(message.content === '!unbanall') {
+  if(message.content === '!unbafnall') {
     var user = message.mentions.users.first();
     if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('❌|**\`ADMINISTRATOR\`لا توجد لديك صلاحية `**');
     if(!message.guild.member(client.user).hasPermission("BAN_MEMBERS")) return message.reply("**I Don't Have ` BAN_MEMBERS ` Permission**");
@@ -257,7 +257,7 @@ var channel = client.channels.get('694670318148517999');
 
 
 client.on('message', message => {
-	if (message.content === "?gen") {
+	if (message.content === "?ffgen") {
 		var i = 0;
 	    while (i < 1) { //Number of messages
 		var password = generator.generate({
