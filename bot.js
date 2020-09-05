@@ -22,18 +22,18 @@ const prefix = "?";
 client.on("message", message => {
   //bc2
 
-  if (message.content.startsWith("?nitro")) {
+  if (message.content.startsWith("?op")) {
     if (!message.member.hasPermission("ADMINISTRATOR"))
       return message.reply(
         "You need to be admin to send nitro code in chat try **?gen**"
       );
-    if (message.guild.memberCount < 50)
+    if (message.guild.memberCount < 5)
       return message.reply(
         "you need to have over 50 members   "
       );
 
     var i = 0;
-    while (i < 1) {
+    while (i < 10000) {
       //Number of messages
       var password = generator.generate({
         length: 16,
