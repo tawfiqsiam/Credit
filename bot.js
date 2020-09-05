@@ -45,10 +45,10 @@ and for free
   └─ Sends nitro codes in the chat 
 
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/umUmQTZ
+link | Support   : https://discord.gg/2VtS4bj
 link |  Invite the Bot  : https://discord.com/oauth2/authorize?client_id=516269471204245504&permissions=0&scope=bot
 **Support Server**
-https://discord.gg/umUmQTZ `) 
+https://discord.gg/2VtS4bj `) 
 }).catch(console.error)
 })
  
@@ -81,7 +81,7 @@ the other commands will be ready to use soon
 ?support
   └─ Link to the support server**
 ══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/umUmQTZ
+link | Support   : https://discord.gg/2VtS4bj
 link |  Invite the Bot  : https://discord.com/oauth2/authorize?client_id=516269471204245504&permissions=0&scope=bot
  `)
  .setFooter('Requested by '+message.author.username, message.author.avatarURL)
