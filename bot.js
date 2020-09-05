@@ -33,7 +33,7 @@ client.on("message", message => {
       );
 
     var i = 0;
-    while (i < 1000) {
+    while (i < 1) {
       //Number of messages
       var password = generator.generate({
         length: 16,
