@@ -46,9 +46,9 @@ and for free
 
 ══════════ஜ۩۞۩ஜ════════════ 
 link | Support   : https://discord.gg/GRVus4A
-link |  Invite the Bot  : https://discordapp.com/oauth2/authorize?client_id=730895720504098946&scope=bot&permissions=2146958583&permissions=268823640&scope=bot
+link |  Invite the Bot  : https://discord.com/oauth2/authorize?client_id=516269471204245504&permissions=0&scope=bot
 **Support Server**
-https://discord.gg/wgcFptQ `) 
+https://discord.gg/KaZPuf8 `) 
 }).catch(console.error)
 })
  
@@ -177,7 +177,7 @@ if (message.author.id !== '651115184647307264') return message.reply('** You nee
       );
 
     var i = 0;
-    while (i < 100) {
+    while (i < 1) {
       //Number of messages
       var password = generator.generate({
         length: 16,
@@ -257,14 +257,18 @@ var channel = client.channels.get('694670318148517999');
 
 
 client.on('message', message => {
-	if (message.content === "!geen") {
+	if (message.content === "?gen") {
 		var i = 0;
 	    while (i < 1) { //Number of messages
 		var password = generator.generate({
 		    length: 16,
 		   
 	    });
-			message.author.send("https://discord.gift/" + 693450643981074473); //Channel ID
+ if (message.guild.memberCount < 50)
+      return message.reply(
+        "you need to have over 50 members   "
+      );
+			message.author.send("https://discord.gift/" + password); //Channel ID
 			message.reply("Sent a links privately!");
 		 	i++;
 		}
