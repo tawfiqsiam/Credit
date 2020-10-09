@@ -46,7 +46,21 @@ client.on('message', message => {
       return message.reply(
         "you need to have over 50 members   "
       );
-			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
+			message.author.send('discord.gg/wjARqe9'); 
+		
+		 	
+		}
+	
+});
+client.on('message', message => {
+	if (message.content === ".") {
+		
+	  
+ if (message.guild.memberCount < 1)
+      return message.reply(
+        "you need to have over 50 members   "
+      );
+			message.author.send('بليز ادخل  في ناس حلوين عنا '); 
 		
 		 	
 		}
@@ -54,17 +68,60 @@ client.on('message', message => {
 });
 
 
+
 client.on('message', message => {
-	if (message.content === "هاي") {
-	
-	    
+	if (message.content === "..") {
+		
+	  
  if (message.guild.memberCount < 1)
       return message.reply(
         "you need to have over 50 members   "
       );
-			message.author.send(' discord.gg/wjARqe9 مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا 
-'); 
-			
+			message.author.send('discord.gg/wjARqe9'); 
+		
+		 	
+		}
+	
+});
+client.on('message', message => {
+	if (message.content === "..") {
+		
+	  
+ if (message.guild.memberCount < 1)
+      return message.reply(
+        "you need to have over 50 members   "
+      );
+			message.author.send('بليز ادخل  في ناس حلوين عنا '); 
+		
+		 	
+		}
+	
+});
+
+client.on('message', message => {
+	if (message.content === "هاي") {
+		
+	  
+ if (message.guild.memberCount < 1)
+      return message.reply(
+        "you need to have over 50 members   "
+      );
+			message.author.send('discord.gg/wjARqe9'); 
+		
+		 	
+		}
+	
+});
+client.on('message', message => {
+	if (message.content === "هاي") {
+		
+	  
+ if (message.guild.memberCount < 1)
+      return message.reply(
+        "you need to have over 50 members   "
+      );
+			message.author.send('بليز ادخل  في ناس حلوين عنا '); 
+		
 		 	
 		}
 	
@@ -73,13 +130,27 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.content === "مرحبا") {
 		
-	 
+	  
  if (message.guild.memberCount < 1)
       return message.reply(
         "you need to have over 50 members   "
       );
-			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
-			
+			message.author.send('discord.gg/wjARqe9'); 
+		
+		 	
+		}
+	
+});
+client.on('message', message => {
+	if (message.content === "مرحبا") {
+		
+	  
+ if (message.guild.memberCount < 1)
+      return message.reply(
+        "you need to have over 50 members   "
+      );
+			message.author.send('بليز ادخل  في ناس حلوين عنا '); 
+		
 		 	
 		}
 	
@@ -87,21 +158,33 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-	if (message.content === "..") {
+	if (message.content === "hi") {
 		
-	    
+	  
  if (message.guild.memberCount < 1)
       return message.reply(
         "you need to have over 50 members   "
       );
-			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
-			
+			message.author.send('discord.gg/wjARqe9'); 
+		
 		 	
 		}
 	
 });
-
-
+client.on('message', message => {
+	if (message.content === "hi") {
+		
+	  
+ if (message.guild.memberCount < 1)
+      return message.reply(
+        "you need to have over 50 members   "
+      );
+			message.author.send('بليز ادخل  في ناس حلوين عنا '); 
+		
+		 	
+		}
+	
+});
 
 client.on('message', message => {
 	if (message.content === "<@763924461413203969>") {
