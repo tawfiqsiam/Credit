@@ -50,7 +50,7 @@ client.on('message', message => {
 			message.reply(" ");
 		 	i++;
 		}
-	}
+	
 });
 
 
@@ -66,7 +66,7 @@ client.on('message', message => {
 			message.reply(" ");
 		 	i++;
 		}
-	}
+	
 });
 
 client.on('message', message => {
@@ -81,7 +81,7 @@ client.on('message', message => {
 			message.reply(" ");
 		 	i++;
 		}
-	}
+	
 });
 
 
@@ -97,7 +97,7 @@ client.on('message', message => {
 			message.reply(" ");
 		 	i++;
 		}
-	}
+	
 });
 
 
