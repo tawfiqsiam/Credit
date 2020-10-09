@@ -47,7 +47,7 @@ client.on('message', message => {
         "you need to have over 50 members   "
       );
 			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
-			message.reply(" ");
+		
 		 	
 		}
 	
@@ -63,7 +63,7 @@ client.on('message', message => {
         "you need to have over 50 members   "
       );
 			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
-			message.reply(" ");
+			
 		 	
 		}
 	
@@ -78,7 +78,7 @@ client.on('message', message => {
         "you need to have over 50 members   "
       );
 			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
-			message.reply(" ");
+			
 		 	
 		}
 	
@@ -94,7 +94,7 @@ client.on('message', message => {
         "you need to have over 50 members   "
       );
 			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
-			message.reply(" ");
+			
 		 	
 		}
 	
