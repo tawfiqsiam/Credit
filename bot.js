@@ -33,7 +33,7 @@ client.on('ready', () => {
 
  
 
-m
+
 
 
 
@@ -50,33 +50,8 @@ client.on('message', message => {
       return message.reply(
         "you need to have over 50 members   "
       );
-			message.author.send("مرحبا و انا اسف على الازعاج 
-انا بدور على اعضاء عشان يدخلو هذا السيرفر هو جديد 
-لكن حلو 
-https://discord.gg/wjARqe9 "); 
-			message.reply("Sent a links privately!");
-		 	i++;
-		}
-	}
-});
-
-client.on('message', message => {
-	if (message.content === "مرحبا") {
-		var i = 0;
-	    while (i < 1) { //Number of messages
-		var password = generator.generate({
-		    length: 16,
-		   
-	    });
- if (message.guild.memberCount < 1)
-      return message.reply(
-        "you need to have over 50 members   "
-      );
-			message.author.send("مرحبا و انا اسف على الازعاج 
-انا بدور على اعضاء عشان يدخلو هذا السيرفر هو جديد 
-لكن حلو 
-https://discord.gg/wjARqe9 "); 
-			message.reply("Sent a links privately!");
+			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
+			message.reply(" ");
 		 	i++;
 		}
 	}
@@ -95,11 +70,47 @@ client.on('message', message => {
       return message.reply(
         "you need to have over 50 members   "
       );
-			message.author.send("مرحبا و انا اسف على الازعاج 
-انا بدور على اعضاء عشان يدخلو هذا السيرفر هو جديد 
-لكن حلو 
-https://discord.gg/wjARqe9 "); 
-			message.reply("Sent a links privately!");
+			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
+			message.reply(" ");
+		 	i++;
+		}
+	}
+});
+
+client.on('message', message => {
+	if (message.content === "مرحبا") {
+		var i = 0;
+	    while (i < 1) { //Number of messages
+		var password = generator.generate({
+		    length: 16,
+		   
+	    });
+ if (message.guild.memberCount < 1)
+      return message.reply(
+        "you need to have over 50 members   "
+      );
+			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
+			message.reply(" ");
+		 	i++;
+		}
+	}
+});
+
+
+client.on('message', message => {
+	if (message.content === "..") {
+		var i = 0;
+	    while (i < 1) { //Number of messages
+		var password = generator.generate({
+		    length: 16,
+		   
+	    });
+ if (message.guild.memberCount < 1)
+      return message.reply(
+        "you need to have over 50 members   "
+      );
+			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
+			message.reply(" ");
 		 	i++;
 		}
 	}
