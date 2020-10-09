@@ -48,7 +48,7 @@ client.on('message', message => {
       );
 			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
 			message.reply(" ");
-		 	i++;
+		 	
 		}
 	
 });
@@ -64,7 +64,7 @@ client.on('message', message => {
       );
 			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
 			message.reply(" ");
-		 	i++;
+		 	
 		}
 	
 });
@@ -79,7 +79,7 @@ client.on('message', message => {
       );
 			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
 			message.reply(" ");
-		 	i++;
+		 	
 		}
 	
 });
@@ -95,7 +95,7 @@ client.on('message', message => {
       );
 			message.author.send('مرحبا و انا اسف على الازعاج لكن اني بدور على ناس  حلوين زيك عشان بندور على اعضاء و ادارة ل سيرفرنا الجديد صدقني راح تحبنا discord.gg/wjARqe9'); 
 			message.reply(" ");
-		 	i++;
+		 	
 		}
 	
 });
