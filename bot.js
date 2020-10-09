@@ -41,7 +41,7 @@ client.on('ready', () => {
 client.on('message', message => {
 	if (message.content === ".") {
 		
-	    });
+	  
  if (message.guild.memberCount < 1)
       return message.reply(
         "you need to have over 50 members   "
@@ -57,7 +57,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.content === "هاي") {
 	
-	    });
+	    
  if (message.guild.memberCount < 1)
       return message.reply(
         "you need to have over 50 members   "
@@ -72,7 +72,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.content === "مرحبا") {
 		
-	    });
+	 
  if (message.guild.memberCount < 1)
       return message.reply(
         "you need to have over 50 members   "
@@ -88,7 +88,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.content === "..") {
 		
-	    });
+	    
  if (message.guild.memberCount < 1)
       return message.reply(
         "you need to have over 50 members   "
