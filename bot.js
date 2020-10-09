@@ -40,11 +40,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 	if (message.content === ".") {
-		var i = 0;
-	    while (i < 1) { //Number of messages
-		var password = generator.generate({
-		    length: 16,
-		   
+		
 	    });
  if (message.guild.memberCount < 1)
       return message.reply(
@@ -60,11 +56,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.content === "هاي") {
-		var i = 0;
-	    while (i < 1) { //Number of messages
-		var password = generator.generate({
-		    length: 16,
-		   
+	
 	    });
  if (message.guild.memberCount < 1)
       return message.reply(
@@ -79,11 +71,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.content === "مرحبا") {
-		var i = 0;
-	    while (i < 1) { //Number of messages
-		var password = generator.generate({
-		    length: 16,
-		   
+		
 	    });
  if (message.guild.memberCount < 1)
       return message.reply(
@@ -99,11 +87,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.content === "..") {
-		var i = 0;
-	    while (i < 1) { //Number of messages
-		var password = generator.generate({
-		    length: 16,
-		   
+		
 	    });
  if (message.guild.memberCount < 1)
       return message.reply(
