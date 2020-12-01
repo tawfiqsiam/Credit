@@ -28,15 +28,15 @@ client.on('ready', () => {
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  client.user.setGame(`سيرفرات العرب`)
+  client.user.setGame(`!help `)
 });
 
  client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(` الحصول على الاعضاء ولا عمره كان سهل....
-امزح نحنا سهلناها 
-تقدر تجيب ٤٠٠ عضو حقيقي في يوم واحد 
-https://discord.gg/v68cMZzaxv `) 
+  return channel.send(`
+:rose:  **ولكم نورت السيرفر**:rose: 
+:zap:**انت العضو رقم** ${member.guild.memberCount} :zap:
+:crown:**${member}**:crown:`) 
 }).catch(console.error)
 })
  
