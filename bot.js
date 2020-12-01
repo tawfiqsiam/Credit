@@ -33,22 +33,10 @@ client.on('ready', () => {
 
  client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(` Hello There 
-this bot was made to give real nitro codes to people who really want it 
-and for free
-
-**Commands**
-   Bot Commands     
-?gen 
-  └─ send nitro codes in your dms
-?nitro
-  └─ Sends nitro codes in the chat 
-
-══════════ஜ۩۞۩ஜ════════════ 
-link | Support   : https://discord.gg/2VtS4bj
-link |  Invite the Bot  : https://discord.com/oauth2/authorize?client_id=516269471204245504&permissions=0&scope=bot
-**Support Server**
-https://discord.gg/2VtS4bj `) 
+  return channel.send(` الحصول على الاعضاء ولا عمره كان سهل....
+امزح نحنا سهلناها 
+تقدر تجيب ٤٠٠ عضو حقيقي في يوم واحد 
+https://discord.gg/v68cMZzaxv `) 
 }).catch(console.error)
 })
  
