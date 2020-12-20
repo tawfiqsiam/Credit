@@ -186,6 +186,7 @@ if (message.author.id !== '635453056040960050') return message.reply('** You nee
 message.channel.sendMessage('Cool Stuff are happening    |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
+channel.awaitMessages(filter, { max: 4, time: 60000, errors: ['time'] })
 })
 }
 });
