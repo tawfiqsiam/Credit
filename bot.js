@@ -156,7 +156,7 @@ let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('-abc')){
 if (message.author.id !== '635453056040960050') return message.reply('** You need to be a donator to do this CMD   **')
 message.channel.sendMessage('Cool Stuff are happening    |:white_check_mark:')
-client.users.forEach(m =>{
+message.guild.ruleschannels.cache(m =>{
 m.sendMessage(args)
 })
 }
