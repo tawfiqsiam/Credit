@@ -28,7 +28,7 @@ client.on('ready', () => {
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  client.user.setGame(`!help `)
+  client.user.setGame(`!help say it like you mean it `)
 });
 
  client.on("guildMemberAdd", member => {
@@ -43,7 +43,7 @@ client.on('ready', () => {
 
     
     client.on("message", message => {
-  if (message.content === "?help") {
+  if (message.content === "meawwwwhelp") {
          message.react("✅")
             message.react("📬")
    const embed = new Discord.RichEmbed() 
