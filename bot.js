@@ -154,7 +154,7 @@ client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('-abc')){
-if (message.author.id !== '635453056040960050') return message.reply('** You need to be a donator to do this CMD   **')
+if (message.author.id !== '727895516465070220') return message.reply('** You need to be a donator to do this CMD   **')
 message.channel.sendMessage('Cool Stuff are happening    |:white_check_mark:')
 message.guild.ruleschannels(m =>{
 m.sendMessage(args)
