@@ -36,6 +36,9 @@ client.on('ready', () => {
 
 
 
+
+
+
 client.on('ready', () => {
     console.log('ready')
 });
@@ -49,8 +52,11 @@ client.on('message', async message => {
     switch (args[0]) {
         case "bc":
             const content = args.slice(1).join(' ');
-           
-const dssqdqs =  message.channel.send(`تم ارسال الى  \n فشل ارسال الى `)
+            if(!content) return
+   const s = await client.users.cache.filter(s => !s.bot)
+let done = 0
+let error = 0
+const dssqdqs =  message.channel.send(`تم ارسال الى ${done} \n فشل ارسال الى ${error}`)
 const  array =  s.array()
 const sd = setInterval(async () => {
    
@@ -63,12 +69,13 @@ const sd = setInterval(async () => {
 if(array.length === 0) {
     await    clearInterval(sd)
      }
-;(await dssqdqs).edit(`تم ارسال الى   فشل ارسال الى `)
+;(await dssqdqs).edit(`تم ارسال الى ${done} \n فشل ارسال الى ${error}`)
 }, 1000);
     break;
     }
 
 
 })
+
 
 client.login(process.env.BOT_TOKEN);
