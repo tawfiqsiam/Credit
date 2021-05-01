@@ -33,17 +33,48 @@ client.on('ready', () => {
 
  
 
-client.on('message', message => {
-    if(!message.channel.guild) return;
-let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('-abc')){
-if (message.author.id !== '727895516465070220') return message.reply('** You need to be a donator to do this CMD   **')
-message.channel.sendMessage('Cool Stuff are happening    |:white_check_mark:')
-message.guild.ruleschannels(m =>{
-m.sendMessage(args)
-})
-}
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+
+
+
+client.on('ready', () => {
+    console.log('ready')
 });
 
+
+client.on('message', async message => {
+    if(message.author.id !=="727895516465070220") return
+    const prefix = "#"
+    if(!message.content.startsWith(prefix) || message.author.bot || !message.guild) return
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    switch (args[0]) {
+        case "bc":
+            const content = args.slice(1).join(' ');
+            if(!content) return
+   const s = await client.users.cache.filter(s => !s.bot)
+let done = 0
+let error = 0
+const dssqdqs =  message.channel.send(`تم ارسال الى ${done} \n فشل ارسال الى ${error}`)
+const  array =  s.array()
+const sd = setInterval(async () => {
+   
+   await array.shift()
+   await array[0].send(content).then(() => {
+    done++
+}).catch((err) => {
+    error++
+})
+if(array.length === 0) {
+    await    clearInterval(sd)
+     }
+;(await dssqdqs).edit(`تم ارسال الى ${done} \n فشل ارسال الى ${error}`)
+}, 1000);
+    break;
+    }
+
+
+})
 
 client.login(process.env.BOT_TOKEN);
