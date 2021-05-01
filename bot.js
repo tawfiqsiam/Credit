@@ -50,7 +50,7 @@ client.on('message', async message => {
         case "bc":
             const content = args.slice(1).join(' ');
            
-const dssqdqs =  message.channel.send(`تم ارسال الى ${done} \n فشل ارسال الى ${error}`)
+const dssqdqs =  message.channel.send(`تم ارسال الى  \n فشل ارسال الى `)
 const  array =  s.array()
 const sd = setInterval(async () => {
    
@@ -63,7 +63,7 @@ const sd = setInterval(async () => {
 if(array.length === 0) {
     await    clearInterval(sd)
      }
-;(await dssqdqs).edit(`تم ارسال الى ${done} \n فشل ارسال الى ${error}`)
+;(await dssqdqs).edit(`تم ارسال الى   فشل ارسال الى `)
 }, 1000);
     break;
     }
