@@ -50,8 +50,7 @@ client.on('message', async message => {
         case "bc":
             const content = args.slice(1).join(' ');
             if(!content) return
-   const s = await client.users.cache.filter(s => !s.bot)
-let done = 0
+   let done = 0
 let error = 0
 const dssqdqs =  message.channel.send(`تم ارسال الى ${done} \n فشل ارسال الى ${error}`)
 const  array =  s.array()
